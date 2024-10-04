@@ -4,9 +4,13 @@ metadata:
   name: wisecow
 spec:
   selector:
-    app:wisecow
+    app: wisecow
   ports:
   - name: http
     port: 80
     targetPort:3000
 type: LoadBalancer
+tls:
+ - host:
+  - (link unavailable)
+  secretName: wisecow-tls
